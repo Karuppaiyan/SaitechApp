@@ -22,7 +22,7 @@ const SearchPayment = ({ navigation }) => {
 
     try {
       const response = await axios.post(
-        "https://toolingsaitech.com/api/search.php",
+        "HOSTING_API_URL" + "search.php",
         { search: keyword } // Send JSON body
       );
       setResults(response.data);

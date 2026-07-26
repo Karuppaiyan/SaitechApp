@@ -15,7 +15,7 @@ export default function LoginScreen({ navigation }) {
     setLoading(true);
 
     try {
-      const response = await fetch("https://toolingsaitech.com/api/login.php", { // use your local IP or 10.0.2.2 for Android emulator
+      const response = await fetch("HOSTING_API_URL" + "login.php", { // use your local IP or 10.0.2.2 for Android emulator
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username, password }),

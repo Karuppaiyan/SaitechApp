@@ -72,7 +72,7 @@ const EditScreen = ({ route, navigation }) => {
 
     try {
       const response = await axios.post(
-        "https://toolingsaitech.com/api/updateData.php",
+        "HOSTING_API_URL" + "updateData.php",
         {
           id, 
           reg_date: regDate, 
